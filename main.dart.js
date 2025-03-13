@@ -95294,7 +95294,7 @@ p=A.a([s,new A.DZ(r,q,B.a0m,B.a_q,B.a_r,B.m,!0,h),B.ic,A.eT(A.yU(new A.u7(k,m,ne
 if(i.y){s=r.a.a
 r=i.z
 r=r==null?h:r.b
-p.push(A.Ku(A.a([new A.ix(A.yU(new A.C7("https://qa.aostasoftware.com/FeedBack?Url="+s+"&Dep="+A.p(r),200,h),B.H,B.l,h,h,h,B.fZ,h),i.x),B.ic,A.agy(A.a([A.awD(B.a4C,i.ga7q(),A.a5D(h,h,B.cS,h,h,h,h,h,h,B.l,h,h,h,h,new A.d5(A.mF(10),B.v),h,h,h,h)),A.awD(B.a4A,i.ga7r(),A.a5D(h,h,B.cS,h,h,h,h,h,h,B.l,h,h,h,h,new A.d5(A.mF(10),B.v),h,h,h,h))],f),B.bg,B.kD,B.dA)],f),B.bg,B.bx,B.dA))}B.d.R(e,p)}return new A.CQ(new A.ye(g,B.l,new A.WO(h,h,1/0,56),h),new A.cN(B.FU,A.Ku(e,B.bg,B.bx,B.dA),h),h)}}
+p.push(A.Ku(A.a([new A.ix(A.yU(new A.C7("https://qa.aostasoftware.com/Cloud_feedback_Aosta/index.html?Url="+s+"&Dep="+A.p(r),200,h),B.H,B.l,h,h,h,B.fZ,h),i.x),B.ic,A.agy(A.a([A.awD(B.a4C,i.ga7q(),A.a5D(h,h,B.cS,h,h,h,h,h,h,B.l,h,h,h,h,new A.d5(A.mF(10),B.v),h,h,h,h)),A.awD(B.a4A,i.ga7r(),A.a5D(h,h,B.cS,h,h,h,h,h,h,B.l,h,h,h,h,new A.d5(A.mF(10),B.v),h,h,h,h))],f),B.bg,B.kD,B.dA)],f),B.bg,B.bx,B.dA))}B.d.R(e,p)}return new A.CQ(new A.ye(g,B.l,new A.WO(h,h,1/0,56),h),new A.cN(B.FU,A.Ku(e,B.bg,B.bx,B.dA),h),h)}}
 A.ar_.prototype={
 $0(){this.a.f=!0},
 $S:0}
