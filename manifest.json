@@ -1,6 +1,6 @@
 {
-    "name": "qr_code_generator_web",
-    "short_name": "qr_code_generator_web",
+    "name": "food_order",
+    "short_name": "food_order",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
