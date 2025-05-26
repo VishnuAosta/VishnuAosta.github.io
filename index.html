@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="food_order">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>food_order</title>
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <title>File Upload Test</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          padding: 50px;
+        }
+        input[type="file"] {
+          margin: 20px 0;
+        }
+        img {
+          max-width: 300px;
+          margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+
+<h2>📁 File Upload Test</h2>
+<p>Select an image or any file below:</p>
+
+<input type="file" id="fileInput" accept="*/*">
+<br>
+<button onclick="previewFile()">Preview Image</button>
+
+<div id="preview"></div>
+
+<script>
+    function previewFile() {
+      const fileInput = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      const file = fileInput.files[0];
+
+      if (!file) {
+        alert("Please select a file first.");
+        return;
+      }
+
+      if (file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.innerHTML = `<img src="${e.target.result}" alt="Preview Image">`;
+        };
+        reader.readAsDataURL(file);
+      } else {
+        preview.innerHTML = `<p>Selected file: <strong>${file.name}</strong></p>`;
+      }
+    }
+</script>
+
 </body>
 </html>
